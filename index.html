@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="js/TweenMax.min.js"></script>
     <script src="js/Winwheel.min.js"></script>
-    <title>Ruleta con Librerias</title>
-  </head>
-  <body>
+    <title>Ruleta de Colores</title>
+</head>
+
+<body>
     <label>Introduce tu nombre: </label>
     <input type="text" name="nombre" id="nombre">
-    <input type="button" value="Girar" onclick="miRuleta.startAnimation();" />
+    <input type="button" value="Girar" onclick="validarNombre();" />
     <br /><br />
     <canvas id="canvas" height="400" width="400"></canvas>
     <script src="js/functions.js"></script>
-  </body>
+</body>
+
 </html>
