@@ -36,11 +36,6 @@ function mensaje() {
         });
 
     alert(`${nombre} te ha tocado el color ${color}`);
-
-    //miRuleta.stopAnimation(false);
-    //miRuleta.rotationAngle = 0;
-    //miRuleta.draw();
-    //dibujarIndicador();
 }
 
 function dibujarIndicador() {
@@ -59,6 +54,9 @@ function dibujarIndicador() {
 
 function validarNombre() {
     if (document.getElementById("nombre").value != '') {
+        miRuleta.stopAnimation(false);
+        miRuleta.rotationAngle = 0;
+        miRuleta.draw();
         dibujarIndicador();
         miRuleta.startAnimation();
     } else {
